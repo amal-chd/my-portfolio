@@ -33,24 +33,6 @@
 --scroll-bar-color: hsl(var(--hue-color), 12%, 30%);
 --scroll-thumb-color: hsl(var(--hue-color), 12%, 50%);
 
-/* ========== Global Styles ========== */
-body {
-  background-color: var(--body-color);
-  color: var(--text-color);
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: var(--title-color);
-}
-
-/* Buttons */
-button {
-  background-color: var(--first-color
-
-
   /*========= Font and typography ===========*/
   --body-font: "Poppins", sans-serif;
 
