@@ -4,29 +4,24 @@
 
 :root {
   --header-height: 3rem;
+
+  /*======= Colors =======*/
+  /* Change Favorite color */
+  --hue-color: 240;
+
   /*========= HSL Color mode =========*/
-  /* ========== OpenAI Website Theme ========== */
-
-/* Change Primary Theme Color */
---hue-color: 160; /* OpenAI's greenish teal */
-
-/*========= HSL Color mode =========*/
---first-color: hsl(var(--hue-color), 69%, 50%);
---first-color-second: hsl(var(--hue-color), 69%, 50%);
---first-color-alt: hsl(var(--hue-color), 57%, 43%);
---first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-
-/* Text Colors */
---title-color: hsl(var(--hue-color), 8%, 95%);
---text-color: hsl(var(--hue-color), 8%, 75%);
---text-color-light: hsl(var(--hue-color), 8%, 65%);
-
-/* Background Colors */
---input-color: hsl(var(--hue-color), 30%, 20%);
---body-color: hsl(var(--hue-color), 25%, 10%);
---container-color: hsl(var(--hue-color), 20%, 15%);
---scroll-bar-color: hsl(var(--hue-color), 12%, 30%);
---scroll-thumb-color: hsl(var(--hue-color), 12%, 50%);
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========= Font and typography ===========*/
   --body-font: "Poppins", sans-serif;
