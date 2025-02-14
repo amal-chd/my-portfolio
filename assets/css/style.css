@@ -109,35 +109,7 @@
 }
 
 
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
 
-#theme-toggle-btn {
-  background: var(--onyx);
-  border: 1px solid var(--jet);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
-}
-
-#theme-toggle-btn:hover {
-  background: var(--eerie-black-1);
-}
-
-#theme-toggle-btn ion-icon {
-  color: var(--openai-blue);
-  font-size: 20px;
-}
 
 
 
