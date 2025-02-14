@@ -140,39 +140,7 @@
 }
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-list {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .navbar-link {
-    padding: 10px 7px;
-  }
-
-  .sidebar {
-    max-height: 200px;
-  }
-
-  .sidebar.active {
-    max-height: 500px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    border-radius: 0;
-  }
-
-  .navbar-link {
-    font-size: var(--fs-7);
-  }
-
-  .sidebar {
-    padding: 10px;
-  }
-}
 
 
 /*-----------------------------------*\
