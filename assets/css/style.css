@@ -516,6 +516,7 @@ main {
 \*-----------------------------------*/
 
 /* Navbar Styles */
+/* Navbar Styles */
 .navbar {
   position: fixed;
   bottom: 0;
@@ -527,21 +528,25 @@ main {
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
+  padding: 10px 0; /* Add padding to the navbar */
 }
 
 .navbar-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  gap: 20px; /* Space between navbar links */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .navbar-link {
   color: var(--light-gray);
   font-size: var(--fs-8);
-  padding: 20px 7px;
+  padding: 10px 15px;
   transition: color var(--transition-1);
+  text-decoration: none;
 }
 
 .navbar-link:hover,
@@ -553,6 +558,36 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#theme-toggle-btn {
+  background: var(--onyx);
+  border: 1px solid var(--jet);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-1);
+}
+
+#theme-toggle-btn:hover {
+  background: var(--eerie-black-1);
+}
+
+#theme-toggle-btn ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 20px;
+}
 /* Light Mode Overrides */
 [data-theme="light"] .navbar {
   background: hsla(0, 0%, 95%, 0.75); /* Light background for navbar */
