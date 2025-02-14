@@ -75,22 +75,53 @@
   --jet: hsl(0, 0%, 20%);
   --onyx: hsl(0, 0%, 15%);
   --eerie-black-1: hsl(0, 0%, 12%);
-  --eerie-black-2: hsl(0, 0%, 10%);
-  --smoky-black: hsl(0, 0%, 5%);
+  --fs-7: 13px;
+  --fs-8: 11px;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
 
-  /* Text Colors */
-  --text-primary: hsl(0, 0%, 95%); /* Light text for dark background */
-  --text-secondary: hsl(0, 0%, 80%); /* Slightly darker light text */
-  --text-accent: hsl(0, 0%, 70%); /* Light gray for secondary text */
+  /**
+   * shadow
+   */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-  /* Accent Colors */
-  --accent-primary: hsl(45, 100%, 60%); /* Bright yellow for contrast */
-  --accent-secondary: hsl(45, 54%, 60%); /* Brighter gold for contrast */
-  --accent-tertiary: hsl(0, 43%, 61%); /* Red for warnings/errors */
+  /**
+   * transition
+   */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
+}
 
-  /* Borders */
-  --border-primary: hsl(0, 0%, 25%); /* Dark gray for borders */
-  --border-secondary: hsl(0, 0%, 35%); /* Slightly lighter for contrast */
+/* Light Mode */
+[data-theme="light"] {
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 95%) 3%, 
+    hsl(0, 0%, 90%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(0, 0%, 90%, 0.251) 0%, 
+    hsla(0, 0%, 85%, 0) 100%
+  ), hsl(0, 0%, 92%);
+  --jet: hsl(0, 0%, 85%);
+  --onyx: hsl(0, 0%, 80%);
+  --eerie-black-1: hsl(0, 0%, 92%);
+  --eerie-black-2: hsl(0, 0%, 90%);
+  --smoky-black: hsl(0, 0%, 95%);
+  --white-1: hsl(0, 0%, 10%); /* Dark text for light background */
+  --white-2: hsl(0, 0%, 20%); /* Slightly lighter dark text */
+  --light-gray: hsl(0, 0%, 30%); /* Dark gray for light mode */
+  --light-gray-70: hsla(0, 0%, 30%, 0.7); /* Dark gray with opacity */
+  --orange-yellow-crayola: hsl(45, 100%, 50%); /* Brighter yellow for contrast */
+  --vegas-gold: hsl(45, 54%, 50%); /* Brighter gold for contrast */
+  --bittersweet-shimmer: hsl(0, 43%, 51%); /* Keep this as is */
 }
 
 
