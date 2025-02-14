@@ -141,19 +141,7 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
-.avatar-box {
-  background: transparent !important; /* Force remove background */
-  box-shadow: none !important; /* Remove shadow if any */
-  border: none !important; /* Remove any border */
-}
 
-.avatar-box img {
-  border-radius: 50%;
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  background: transparent !important; /* Ensure the image itself has no background */
-}
 
 
 
