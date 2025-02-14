@@ -39,6 +39,38 @@
 
     <aside class="sidebar" data-sidebar>
 
+       <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const currentTheme = localStorage.getItem('theme') || 'dark';
+
+      // Set initial theme
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      // Update button icon
+      updateButtonIcon(currentTheme);
+
+      // Toggle theme on button click
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateButtonIcon(newTheme);
+      });
+
+      function updateButtonIcon(theme) {
+        const icon = theme === 'dark' ? 'moon-outline' : 'sunny-outline';
+        themeToggleBtn.innerHTML = `<ion-icon name="${icon}"></ion-icon>`;
+      }
+    });
+  </script>
+
+  <!-- Ionicons (for icons) -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      
       <div class="sidebar-info">
 
         <figure class="avatar-box">
