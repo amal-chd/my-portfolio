@@ -458,6 +458,7 @@ main {
 /* Navbar Styles */
 /* Navbar Styles */
 /* Navbar Styles */
+/* Navbar Styles */
 .navbar {
   position: fixed;
   bottom: 0;
@@ -469,6 +470,8 @@ main {
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
+  padding: 10px 0; /* Add padding to the navbar */
+  margin: 0; /* Ensure no extra margin */
 }
 
 .navbar-list {
@@ -476,14 +479,17 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullet points */
 }
 
 .navbar-link {
   color: var(--light-gray);
   font-size: var(--fs-8);
-  padding: 20px 7px;
+  padding: 10px 15px; /* Adjust padding for better spacing */
   transition: color var(--transition-1);
+  text-decoration: none; /* Remove underline from links */
 }
 
 .navbar-link:hover,
@@ -513,8 +519,6 @@ main {
 [data-theme="light"] .navbar-link.active {
   color: var(--orange-yellow-crayola); /* Accent color for active link */
 }
-
-
 
 
 
