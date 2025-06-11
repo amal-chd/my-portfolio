@@ -849,8 +849,9 @@ p {
 	font-size: 40px;
 	font-weight: 600;
 	color: var(--black);
-	line-height: 0.9em;
+	line-height: 1.2em;
 	margin-bottom: 24px;
+	text-align: left;
 }
 
 .content-box-card .top-info .main-title span {
@@ -861,13 +862,17 @@ p {
 	font-size: 18px;
 	font-weight: 400;
 	color: var(--light-black);
-	line-height: 1.333em;
+	line-height: 1.6em;
+	text-align: left;
+	margin-bottom: 16px;
 }
 
 .content-box-card .top-info p b {
 	font-size: 24px;
 	font-weight: 600;
 	color: var(--black);
+	display: block;
+	margin-bottom: 8px;
 }
 
 .content-box-card .available-btn {
@@ -2626,4 +2631,77 @@ body.home-page {
 /* Ensure smooth transition when hiding/showing */
 .content-box-area {
     transition: all 0.3s ease;
+}
+
+/* Mobile Responsive Styles for About Section */
+@media (max-width: 991px) {
+    .content-box-card .top-info {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    .content-box-card .top-info .text {
+        max-width: 100%;
+    }
+
+    .content-box-card .top-info .main-title {
+        font-size: 32px;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+
+    .content-box-card .top-info p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    .content-box-card .top-info p b {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-box-card .top-info {
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .content-box-card .top-info .main-title {
+        font-size: 28px;
+    }
+
+    .content-box-card .top-info p {
+        font-size: 15px;
+    }
+
+    .content-box-card .top-info p b {
+        font-size: 18px;
+    }
+}
+
+/* Fix for text overflow in about section */
+.content-box-card .top-info .text {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Improve readability of about section text */
+.content-box-card .top-info p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Add proper spacing between paragraphs */
+.content-box-card .top-info p + p {
+    margin-top: 16px;
+}
+
+/* Ensure proper alignment of inline elements */
+.content-box-card .top-info p span {
+    display: inline-block;
+    vertical-align: baseline;
 }
